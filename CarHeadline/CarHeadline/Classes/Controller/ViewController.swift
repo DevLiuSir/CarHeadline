@@ -120,6 +120,7 @@ extension ViewController {
     /// 配置索引视图
     private func configIndexView() {
         indexView.selectedScaleAnimation = true
+        indexView.backgroundColor = UIColor(white: 1, alpha: 0.5)
     }
 }
 
@@ -142,7 +143,7 @@ extension ViewController: UITableViewDataSource {
         let model = group.carModels[indexPath.row]
         cell.textLabel?.text = model.name
         cell.imageView?.image = UIImage(named: model.icon)
-        cell.accessoryType = .disclosureIndicator
+        cell.accessoryType = .none
         return cell
     }
     
