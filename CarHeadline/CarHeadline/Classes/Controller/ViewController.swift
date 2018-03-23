@@ -109,13 +109,13 @@ extension ViewController {
         view.addSubview(table)
         view.addSubview(indexView)
         view.addSubview(reminderLabel)
-        view.bringSubview(toFront: indexView)
+        view.bringSubviewToFront(indexView)
     }
     /// 配置导航栏
     private func configNavigationBar() {
         navigationItem.title = "汽车头条"
         navigationController?.navigationBar.barTintColor = .red
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     /// 配置索引视图
     private func configIndexView() {
